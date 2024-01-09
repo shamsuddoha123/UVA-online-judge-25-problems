@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    char text;
+    char character;
     int count=0;
-    while (scanf("%c",&text)!=EOF)
+    while (scanf("%c", &character) != EOF)
     {
-        if(text=='"')
+        if(character=='"')
         {
             count++;
-            if(count%2==1)
+            if(count%2!=0)
             {
                 printf("``");
             }
@@ -19,7 +19,7 @@ int main()
         }
         else
         {
-            printf("%c",text);
+            printf("%c",character);
         }
     }
     return 0;
