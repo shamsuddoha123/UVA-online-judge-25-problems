@@ -5,7 +5,7 @@ int main()
     scanf("%d", &test);
     while(test--)
     {
-        maxSpeed=1;
+        maxSpeed=0;
         scanf("%d", &numOfStudent);
         while(numOfStudent--)
         {
